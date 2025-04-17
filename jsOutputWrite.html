@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output - Document.write()</title>
+</head>
+<body>
+    <h1>JavaScript Output - document.write()</h1>
+    <p>This is used for testing purpose only, and using it after HTML page has finished loading will result in wiping the content of the pate.</p>
+    <p id="output">Ans of : 5 + 10 = </p>
+
+    <!-- I added this section to check the effect of using write() after the page is loaded, so I will use a button to triger this effect after the page has successfully loaded -->
+     <button onclick="myFunction()">Click me</button>
+
+    <script>
+    //    let ans = document.write(Number(5 + 10));
+       let ans = (5 + 10);
+       document.getElementById('output').innerText += ans;
+
+       function myFunction() {
+        document.write("The is the only output that will show after clicking the button.")
+       }
+    </script>
+</body>
+</html>
