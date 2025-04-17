@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output - innerHTML</title>
+</head>
+<body id="body">
+    <h1>JavaScript Output and Display Possibilities.</h1>
+    <p id="para1">This paragraph is an innerHTML of the body element, to grab it and save in a variable with JS.</p>
+    <p>This is another line of text too</p>
+    <script>
+        let el = document.getElementById('body').innerHTML; //will grab every HTML element and save it inside el variable
+        // console.log(el); // prints all the HTML Element inside the body tag to the browser console
+        let txt = document.getElementById('body').innerText; // grabs the text content of the body element and save it inside txt, what is considered as txt content are text outside any tag and the one inside paragraph tags.
+        console.log(txt); // prints the text content of the element saved in txt which are the content of the p elements.
+    </script> 
+</body>
+</html>
